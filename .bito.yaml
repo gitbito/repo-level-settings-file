@@ -1,5 +1,5 @@
 # ============================= IMPORTANT =============================
-# Rename this file to ".bito.yaml" and place it in the root of your repository's default branch (e.g., main).
+# Rename this file to ".bito.yaml" and place it in the root of your repository's source branch.
 # This will override your review settings for this particular repository.
 # For more information, please visit: https://docs.bito.ai/ai-code-reviews-in-git/agent-settings/repo-level-settings
 # =====================================================================
@@ -35,6 +35,10 @@ include_source_branches: ""
 # Comma-separated GLOB/regex patterns, e.g.: "feature/*, release/*, main"
 # Use "*" to include all target branches.
 include_target_branches: ""
+
+# List of labels that, if present on a PR/MR, skip automatic review. 
+# Example: "wip, do-not-review, chore, size/*"
+labels_excluded: <nil>
 
 # Run Linting tools during code reviews. Valid values : true | false
 linters_feedback: true
